@@ -10,6 +10,8 @@
 //const transform = pipe(trim, toLowerCase, wrap);
 //console.log(transform(input));
 
+// mutability with objects
+
 const person = { 
     name: 'John',
     address: {
@@ -25,3 +27,20 @@ const updated = {...person,
     },
     name:"Bob"};
 console.log(updated)
+
+// mutability with arrays
+
+const numbers = [1,2,3];
+
+// Adding 
+const index = numbers.indexOf(2);
+const added = [...numbers.slice(0,index),4,...numbers.slice(index)];
+console.log(added);
+
+// removing
+const removed = numbers.filter( n => n !== 2);
+console.log(removed);
+
+// updating
+const numUpdated = numbers.map( n => n ===2 ? 20 : n);
+console.log(numUpdated);
