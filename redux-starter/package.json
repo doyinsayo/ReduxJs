@@ -10,8 +10,14 @@
   "author": "Mosh Hamedani",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "4.41.6",
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.4",
+    "webpack": "^4.41.6",
     "webpack-cli": "3.3.11",
     "webpack-dev-server": "3.10.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
